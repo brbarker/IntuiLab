@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class BallMaterialController : MonoBehaviour
 {
-    public float dFriction;
-    public float sFriction;
-    public Collider coll;
-    // Start is called before the first frame update
+    // Declare the variables to be used in the script. 
+    public float dFriction;     // Dynamic Friction float
+    public float sFriction;     // Static Friction float
+    public Collider coll;       // Defines the collider on the ball so we can access its attributes
+    
     void Start()
     {
-        coll = GetComponent<Collider>();
-        coll.material.dynamicFriction=dFriction;
-        coll.material.staticFriction=sFriction;
+        coll = GetComponent<Collider>();                // Finds the collider component of the ball and assigns it to the variable
+        coll.material.dynamicFriction=dFriction;        // Accesses the dynamic friction value of the collider and assigns it to the variable
+        coll.material.staticFriction=sFriction;         // Accesses the static friction value of the collider and assigns it to the variable
     }
 
     public void ModifySettings()
     {
-        dFriction=0;
-        sFriction=0;
+        dFriction=1;        // Sets the dynamic friction value to 1
+        sFriction=1;        // Sets the static friction value to 1
     }
 
 }

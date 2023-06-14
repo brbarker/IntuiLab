@@ -1,1 +1,6 @@
-This is where you can find all the builds of IntuiLab throughout production. The raw development build files are over 50MB after zipping, so I'm trying to figure out a way to upload build versions while keeping them relatively small. Or if that's even feasible.
+This is where you can find all the builds of IntuiLab throughout production.
+
+Steps for downloading builds:
+1) Click on the build folder you want to download. The latest build is recommended unless stated otherwise in the build folder!
+2) Download all of the files in the build folder and save them to the same folder on your hard drive. It's important for the .exe to be in the same directory as the support files.
+3) To run IntuiLab, run the .exe file from the folder
